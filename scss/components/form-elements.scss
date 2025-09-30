@@ -57,8 +57,8 @@
 
 .badge {
     &.sm {
-       padding: 3px 7px;
-       --bs-badge-font-size: 13px;
+        padding: 3px 7px;
+        --bs-badge-font-size: 13px;
     }
 }
 
@@ -426,7 +426,7 @@ textarea.form-control {
     &.mw {
         min-width: 110px;
     }
-    
+
     .badge {
         top: 0;
     }
@@ -596,6 +596,14 @@ textarea.form-control {
         width: 15px;
         height: 15px;
         object-fit: contain;
+    }
+
+    &.smd {
+        width: 34px;
+        min-width: 34px;
+        height: 34px;
+        min-height: 34px;
+        padding: 4px;
     }
 
     &.sm {
@@ -773,8 +781,86 @@ textarea.form-control {
         }
     }
 
+    // multi
+    .select2-selection--multiple {
+        min-height: 42px;
+        border: 1px solid #DDDDDD;
+        border-radius: 4px;
+        background-color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.8px;
+
+        .select2-selection__rendered {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            flex-wrap: wrap;
+            line-height: normal;
+            min-height: 42px;
+            padding: 8px;
+            padding-right: 32px;
+
+            >li.select2-search:first-child {
+                width: 100% !important;
+
+                .select2-search__field {
+                    width: 100% !important;
+                    margin: 0;
+                }
+            }
+
+            .select2-selection__clear {
+                display: none;
+            }
+
+            .select2-selection__choice {
+                background-color: #8888881A;
+                border: 0;
+                padding: 3px 7px;
+                margin: 0;
+                color: #444;
+                font-size: 14px;
+                line-height: 18px;
+                display: flex;
+                align-items: center;
+                flex-direction: row-reverse;
+                border-radius: 4px;
+
+                .select2-selection__choice__remove {
+                    color: #444;
+                    margin-right: 0;
+                    margin-left: 4px;
+                    font-size: 0;
+                    background: url('../images/ic-close-gray.svg') no-repeat center;
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
+
+
+        .select2-selection__placeholder {
+            color: #888888;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: calc(50% - 9px);
+            right: 6px;
+            background: #fff url(../images/dropdown-black.svg) no-repeat center;
+            border: none;
+            width: 18px;
+            height: 18px;
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
     &.select2-container--focus {
-        .select2-selection--single {
+        .select2-selection {
             border-color: #0056A1;
         }
     }
@@ -808,6 +894,47 @@ textarea.form-control {
     &.select2-container--open {
         .select2-selection--single .select2-selection__arrow b {
             transform: rotate(180deg);
+        }
+
+        .select2-selection--multiple::before {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.multi-checkbox~.select2-container {
+    .select2-results__option {
+        padding-left: 40px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: calc(50% - 10px);
+            width: 20px;
+            height: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #fff;
+        }
+
+        &.select2-results__option--highlighted[aria-selected] {
+            background-color: #ddd;
+            color: #444;
+        }
+
+        &[aria-selected=true] {
+            background-color: #fff;
+
+            &::before {
+                background-image: url(../images/check-sign.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 10px;
+                background-color: #0056A1;
+                border: none;
+            }
         }
     }
 }
@@ -1163,10 +1290,11 @@ textarea.form-control {
 .form-check-label {
     cursor: pointer;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 20px;
     font-weight: 400;
     color: #444;
     display: block;
+    white-space: nowrap;
 }
 
 .form-check {
@@ -1243,6 +1371,10 @@ textarea.form-control {
             &:checked {
                 background-size: 8px;
             }
+        }
+
+        .form-check-label {
+            line-height: 18px;
         }
     }
 }
@@ -1329,7 +1461,6 @@ textarea.form-control {
         th {
             font-weight: 400;
             color: #888888;
-
         }
 
         td {

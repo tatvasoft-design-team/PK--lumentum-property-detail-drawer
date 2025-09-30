@@ -1,0 +1,805 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Main Page</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="shortcut icon" href="images/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- Start Header -->
+		<header class="header">
+			<div class="backdrop"></div>
+			<div class="header-left">
+				<div class="hamburger-menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<a href="index.html" class="logo" title="Lumentum">
+					<img src="images/main-logo.svg" alt="logo">
+				</a>
+			</div>
+
+			<!-- Main Navigation -->
+			<nav class="main-navigation">
+				<ul>
+					<li>
+						<a href="#" title="Dashboard" class="active">
+							<em class="i"><img src="images/dashboard-icon.svg" alt="" /></em>
+							Dashboard
+						</a>
+					</li>
+					<li>
+						<a href="#" title="DigiMap">
+							<em class="i"><img src="images/location-icon.svg" alt="" /></em>
+							DigiMap
+						</a>
+					</li>
+					<li>
+						<a href="#" title="OTC">
+							<em class="i"><img src="images/OTC-icon.svg" alt="" /></em>
+							OTC
+						</a>
+					</li>
+					<li>
+						<span class="submenu-arrow"><img src="images/dropdown-white.svg" alt="" /></span>
+						<a href="#" title="Auctions">
+							<em class="i"><img src="images/auction-icon.svg" alt="" /></em>
+							Auctions
+						</a>
+						<ul class="submenu-content">
+							<li><a href="#" title="PM Summary">PM Summary</a></li>
+							<li><a href="#" title="PM Prospects">PM Prospects</a></li>
+							<li><a href="#" title="Tax Deeds">Tax Deeds</a></li>
+							<li><a href="#" title="Foreclosures">Foreclosures</a></li>
+						</ul>
+					</li>
+					<li>
+						<span class="submenu-arrow"><img src="images/dropdown-white.svg" alt="" /></span>
+						<a href="#" title="AMP">
+							<em class="i"><img src="images/portfolio-icon.svg" alt="" /></em>
+							AMP
+						</a>
+						<ul class="submenu-content">
+							<li><a href="#" title="Asset Research">Asset Research</a></li>
+							<li><a href="#" title="Transaction Research">Transaction Research</a></li>
+							<li><a href="#" title="Reconciliation – Bank">Reconciliation – Bank</a></li>
+							<li><a href="#" title="Reconciliation - Assets">Reconciliation - Assets</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<!-- End Main Navigation -->
+
+			<ul class="user-action">
+				<li>
+					<button class="btn ic-btn">
+						<img src="images/ic-page.svg" alt="" />
+					</button>
+				</li>
+				<li>
+					<button class="btn ic-btn">
+						<img src="images/download-report-white.svg" alt="" />
+					</button>
+				</li>
+				<li>
+					<button class="btn ic-btn">
+						<div class="badge-wrapper">
+							<img src="images/notification.svg" alt="" />
+							<span class="badge">03</span>
+						</div>
+					</button>
+				</li>
+				<li>
+					<button class="btn ic-btn">
+						<div class="badge-wrapper">
+							<img src="images/ic-cart.svg" alt="" />
+							<span class="badge">03</span>
+						</div>
+					</button>
+				</li>
+				<li>
+					<div class="dropdown user-menu-box">
+						<a class="user-menu" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<em><img src="images/user-image.png" alt="user"></em>
+						</a>
+						<div class="dropdown-menu no-click-close user-menu-outer dropdown-menu-lg-end">
+							<select class="custom-Select2-no-search no-parent">
+								<option value="1" selected>Sarah Watson (10171)</option>
+								<option value="2">Sarah Watson (10172)</option>
+								<option value="3">Sarah Watson (10173)</option>
+							</select>
+
+							<p class="user-name">
+								Welcome, <strong class="text-bold">Sarah!</strong>
+							</p>
+
+							<ul>
+								<li>
+									<a href="my-profile.html" title="My Profile">
+										<em class="i"><img src="./images/profile-icon.svg" alt="" /></em>
+										My Profile
+									</a>
+								</li>
+								<li>
+									<a href="access-denied.html" title="Support">
+										<em class="i"><img src="./images/support-icon.svg" alt="" /></em>
+										Support
+									</a>
+								</li>
+								<li>
+									<a href="manage-users.html" title="Settings">
+										<em class="i"><img src="./images/settings-icon.svg" alt="" /></em>
+										Settings
+									</a>
+								</li>
+								<li>
+									<a href="index.html" title="Logout">
+										<em class="i"><img src="./images/logout-icon.svg" alt="" /></em>
+										Logout
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</header>
+		<!-- End Header -->
+
+		<!-- Main Content -->
+		<main class="main-content">
+			<button class="btn btn-primary drawer-btn" data-drawer-btn="comparables-drawer">Open</button>
+		</main>
+		<!-- End Main Content -->
+
+
+		<!-- comparables drawer -->
+		<div class="drawer-main comparables-drawer" data-mcs-theme="light" data-drawer-wrapper="comparables-drawer">
+			<div class="drawer-header align-items-center">
+				<h5 class="drawer-title">Comparables for <strong>6503 Salerno Rd</strong> <span
+						class="text-sm opacity-75">Fort Pierce, FL 34951</span>
+				</h5>
+				<div class="right-side">
+					<div class="right-side align-items-center">
+						<div class="card-text-val">
+							<span class="val">$217,852</span>
+							<div class="d-flex align-items-center gap-1">
+								<p>Comp-Based Value</p>
+								<div class="popover-tooltip-wrapper d-flex">
+									<span class="popover-tooltip" data-bs-html="true" data-bs-placement="bottom"
+										data-bs-html="true">
+										<em class="ic d-flex"><img src="./images/ic-question-white.svg" alt="" /></em>
+									</span>
+									<div class="popover-content" style="display: none;">
+										<p class="text-gray06 text-xs">The average price-per-sqft of the comps you've
+											selected multiplied by the
+											sqft of the subject property.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-text-val">
+							<span class="val">$214</span>
+							<div class="d-flex align-items-center gap-1">
+								<p>Avg. Price/SqFt</p>
+								<div class="popover-tooltip-wrapper d-flex">
+									<span class="popover-tooltip" data-bs-html="true" data-bs-placement="bottom"
+										data-bs-html="true">
+										<em class="ic d-flex"><img src="./images/ic-question-white.svg" alt="" /></em>
+									</span>
+									<div class="popover-content" style="display: none;">
+										<p class="text-gray06 text-xs">The average price-per-sqft of the comps you’ve
+											selected.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button class="btn btn-white sq-btn smd map-toggle">
+							<img class="b-space" src="./images/ic-map.svg" alt="">
+							<img class="b-space white" src="./images/ic-map-white.svg" alt="">
+						</button>
+						<button class="btn btn-outline-white sq-btn smd">
+							<img src="./images/download-report-white.svg" alt="">
+						</button>
+						<div class="dropdown">
+							<button class="btn btn-outline-white sq-btn smd filter-btn" data-bs-toggle="dropdown"
+								aria-expanded="false">
+								<img src="./images/filter-icon-white.svg" alt="">
+							</button>
+							<div class="dropdown-menu no-click-close filter-dropdown dropdown-menu-lg-end">
+								<div class="filter-head">Filter
+									<button type="button" class="btn-close btn ic-btn" data-bs-toggle="dropdown">
+										<img src="./images/close-black.svg" alt="" />
+									</button>
+								</div>
+								<div class="filter-body inner-scroll">
+									<div class="row space-16">
+										<div class="col-sm-6">
+											<label class="form-label b-1 text-sm">Bedrooms
+												<div class="popover-tooltip-wrapper d-inline-flex">
+													<span class="popover-tooltip" data-bs-html="true"
+														data-bs-placement="top" data-bs-html="true">
+														<em class="ic sm d-flex"><img src="./images/question-icon.svg"
+																alt="" /></em>
+													</span>
+													<div class="popover-content" style="display: none;">
+														<p class="text-gray06 text-xs">
+															Specify a range to return comps with a <strong
+																class="fw-semibold text-gray05"> similar
+																bedroom</strong> count as the subject property.
+														</p>
+													</div>
+												</div>
+											</label>
+											<div class="row space-16">
+												<div class="col-sm-6">
+													<select class="custom-Select2-no-search no-parent w-100"
+														name="state" data-placeholder="No Min">
+														<option value="" class="d-none placeholder" selected>No Min
+														</option>
+														<option value="2">Option</option>
+														<option value="3">Option</option>
+														<option value="4">Option</option>
+													</select>
+												</div>
+												<div class="col-sm-6">
+													<select class="custom-Select2-no-search no-parent w-100"
+														name="state" data-placeholder="No Max">
+														<option value="" class="d-none placeholder" selected>No Max
+														</option>
+														<option value="2">Option</option>
+														<option value="3">Option</option>
+														<option value="4">Option</option>
+													</select>
+												</div>
+												<div class="col-12">
+													<div class="form-check">
+														<input type="checkbox" class="form-check-input" id="BedCheckbox"
+															checked>
+														<label class="form-check-label whitespace-normal"
+															for="BedCheckbox">Same Number of
+															Beds
+															<div class="popover-tooltip-wrapper d-inline-flex">
+																<span class="popover-tooltip" data-bs-html="true"
+																	data-bs-placement="top" data-bs-html="true">
+																	<em class="ic sm d-flex"><img
+																			src="./images/question-icon.svg"
+																			alt="" /></em>
+																</span>
+																<div class="popover-content" style="display: none;">
+																	<p class="text-gray06 text-xs">
+																		If enabled, only return comps with the <strong
+																			class="fw-semibold text-gray05"> exact same
+																			number of bedrooms </strong> as the subject
+																		property.
+																	</p>
+																</div>
+															</div>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<label class="form-label b-1 text-sm">Bathrooms
+												<div class="popover-tooltip-wrapper d-inline-flex">
+													<span class="popover-tooltip" data-bs-html="true"
+														data-bs-placement="top" data-bs-html="true">
+														<em class="ic sm d-flex"><img src="./images/question-icon.svg"
+																alt="" /></em>
+													</span>
+													<div class="popover-content" style="display: none;">
+														<p class="text-gray06 text-xs">
+															Specify a range to return comps with a <strong
+																class="fw-semibold text-gray05">similar bathroom
+															</strong>count as the subject property.
+														</p>
+													</div>
+												</div>
+											</label>
+											<div class="row space-16">
+												<div class="col-sm-6">
+													<select class="custom-Select2-no-search no-parent w-100"
+														name="state" data-placeholder="No Min">
+														<option value="" class="d-none placeholder" selected>No Min
+														</option>
+														<option value="2">Option</option>
+														<option value="3">Option</option>
+														<option value="4">Option</option>
+													</select>
+												</div>
+												<div class="col-sm-6">
+													<select class="custom-Select2-no-search no-parent w-100"
+														name="state" data-placeholder="No Max">
+														<option value="" class="d-none placeholder" selected>No Max
+														</option>
+														<option value="2">Option</option>
+														<option value="3">Option</option>
+														<option value="4">Option</option>
+													</select>
+												</div>
+												<div class="col-12">
+													<div class="form-check">
+														<input type="checkbox" class="form-check-input" id="BedCheckbox"
+															checked>
+														<label class="form-check-label" for="BedCheckbox">Same Number of
+															Baths
+															<div class="popover-tooltip-wrapper d-inline-flex">
+																<span class="popover-tooltip" data-bs-html="true"
+																	data-bs-placement="top" data-bs-html="true">
+																	<em class="ic sm d-flex"><img
+																			src="./images/question-icon.svg"
+																			alt="" /></em>
+																</span>
+																<div class="popover-content" style="display: none;">
+																	<p class="text-gray06 text-xs">
+																		If enabled, only return comps with the <strong
+																			class="fw-semibold text-gray05"> exact same
+																			number of bedrooms </strong> as the subject
+																		property.
+																	</p>
+																</div>
+															</div>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<label class="form-label b-1 text-sm">Living square feet
+												<div class="popover-tooltip-wrapper d-inline-flex">
+													<span class="popover-tooltip" data-bs-html="true"
+														data-bs-placement="top" data-bs-html="true">
+														<em class="ic sm d-flex"><img src="./images/question-icon.svg"
+																alt="" /></em>
+													</span>
+													<div class="popover-content" style="display: none;">
+														<p class="text-gray06 text-xs">
+															Specify a range to return comps with <strong
+																class="fw-semibold text-gray05">similar/same total
+																living area</strong> (in sq ft) as the subject property.
+														</p>
+													</div>
+												</div>
+											</label>
+											<div class="row space-16">
+												<div class="col-sm-6">
+													<select class="custom-Select2-no-search no-parent w-100"
+														name="state" data-placeholder="No Min">
+														<option value="" class="d-none placeholder" selected>No Min
+														</option>
+														<option value="2">Option</option>
+														<option value="3">Option</option>
+														<option value="4">Option</option>
+													</select>
+												</div>
+												<div class="col-sm-6">
+													<select class="custom-Select2-no-search no-parent w-100"
+														name="state" data-placeholder="No Max">
+														<option value="" class="d-none placeholder" selected>No Max
+														</option>
+														<option value="2">Option</option>
+														<option value="3">Option</option>
+														<option value="4">Option</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<label class="form-label b-1 text-sm">Lot square feet
+												<div class="popover-tooltip-wrapper d-inline-flex">
+													<span class="popover-tooltip" data-bs-html="true"
+														data-bs-placement="top" data-bs-html="true">
+														<em class="ic sm d-flex"><img src="./images/question-icon.svg"
+																alt="" /></em>
+													</span>
+													<div class="popover-content" style="display: none;">
+														<p class="text-gray06 text-xs">
+															Specify a range to return comps with <strong
+																class="fw-semibold text-gray05">similar lot
+																size</strong> (in sq ft) as the subject property.
+														</p>
+													</div>
+												</div>
+											</label>
+											<div class="row space-16">
+												<div class="col-sm-6">
+													<select class="custom-Select2-no-search no-parent w-100"
+														name="state" data-placeholder="No Min">
+														<option value="" class="d-none placeholder" selected>No Min
+														</option>
+														<option value="2">Option</option>
+														<option value="3">Option</option>
+														<option value="4">Option</option>
+													</select>
+												</div>
+												<div class="col-sm-6">
+													<select class="custom-Select2-no-search no-parent w-100"
+														name="state" data-placeholder="No Max">
+														<option value="" class="d-none placeholder" selected>No Max
+														</option>
+														<option value="2">Option</option>
+														<option value="3">Option</option>
+														<option value="4">Option</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<label class="form-label b-1 text-sm">Year built
+												<div class="popover-tooltip-wrapper d-inline-flex">
+													<span class="popover-tooltip" data-bs-html="true"
+														data-bs-placement="top" data-bs-html="true">
+														<em class="ic sm d-flex"><img src="./images/question-icon.svg"
+																alt="" /></em>
+													</span>
+													<div class="popover-content" style="display: none;">
+														<p class="text-gray06 text-xs">
+															Specify a range to return comps with <strong
+																class="fw-semibold text-gray05">similar age</strong> as
+															the subject property.
+														</p>
+													</div>
+												</div>
+											</label>
+											<div class="row space-16">
+												<div class="col-sm-6">
+													<select class="custom-Select2-no-search no-parent w-100"
+														name="state" data-placeholder="No Min">
+														<option value="" class="d-none placeholder" selected>No Min
+														</option>
+														<option value="2">Option</option>
+														<option value="3">Option</option>
+														<option value="4">Option</option>
+													</select>
+												</div>
+												<div class="col-sm-6">
+													<select class="custom-Select2-no-search no-parent w-100"
+														name="state" data-placeholder="No Max">
+														<option value="" class="d-none placeholder" selected>No Max
+														</option>
+														<option value="2">Option</option>
+														<option value="3">Option</option>
+														<option value="4">Option</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<label class="form-label b-1 text-sm">Last sale price
+												<div class="popover-tooltip-wrapper d-inline-flex">
+													<span class="popover-tooltip" data-bs-html="true"
+														data-bs-placement="top" data-bs-html="true">
+														<em class="ic sm d-flex"><img src="./images/question-icon.svg"
+																alt="" /></em>
+													</span>
+													<div class="popover-content" style="display: none;">
+														<p class="text-gray06 text-xs">
+															Specify a range to return comps with <strong
+																class="fw-semibold text-gray05">similar recorded sale
+																price</strong> as the subject property.
+														</p>
+													</div>
+												</div>
+											</label>
+											<div class="row space-16">
+												<div class="col-sm-6">
+													<select class="custom-Select2-no-search no-parent w-100"
+														name="state" data-placeholder="No Min">
+														<option value="" class="d-none placeholder" selected>No Min
+														</option>
+														<option value="2">Option</option>
+														<option value="3">Option</option>
+														<option value="4">Option</option>
+													</select>
+												</div>
+												<div class="col-sm-6">
+													<select class="custom-Select2-no-search no-parent w-100"
+														name="state" data-placeholder="No Max">
+														<option value="" class="d-none placeholder" selected>No Max
+														</option>
+														<option value="2">Option</option>
+														<option value="3">Option</option>
+														<option value="4">Option</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="col-12">
+											<label class="form-label b-1 text-sm">MLS listing Price
+												<div class="popover-tooltip-wrapper d-inline-flex">
+													<span class="popover-tooltip" data-bs-html="true"
+														data-bs-placement="top" data-bs-html="true">
+														<em class="ic sm d-flex"><img src="./images/question-icon.svg"
+																alt="" /></em>
+													</span>
+													<div class="popover-content" style="display: none;">
+														<p class="text-gray06 text-xs">
+															Specify a range to return comps with <strong
+																class="fw-semibold text-gray05">similar MLS listing
+																price</strong> as the subject property.
+														</p>
+													</div>
+												</div>
+											</label>
+											<div class="row space-16">
+												<div class="col-sm-6">
+													<select class="custom-Select2-no-search no-parent w-100"
+														name="state" data-placeholder="No Min">
+														<option value="" class="d-none placeholder" selected>No Min
+														</option>
+														<option value="2">Option</option>
+														<option value="3">Option</option>
+														<option value="4">Option</option>
+													</select>
+												</div>
+												<div class="col-sm-6">
+													<select class="custom-Select2-no-search no-parent w-100"
+														name="state" data-placeholder="No Max">
+														<option value="" class="d-none placeholder" selected>No Max
+														</option>
+														<option value="2">Option</option>
+														<option value="3">Option</option>
+														<option value="4">Option</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<label class="form-label b-1 text-sm">Max radius (miles)
+												<div class="popover-tooltip-wrapper d-inline-flex">
+													<span class="popover-tooltip" data-bs-html="true"
+														data-bs-placement="top" data-bs-html="true">
+														<em class="ic sm d-flex"><img src="./images/question-icon.svg"
+																alt="" /></em>
+													</span>
+													<div class="popover-content" style="display: none;">
+														<p class="text-gray06 text-xs">
+															Enter a <strong class="fw-semibold text-gray05">distance in
+																miles </strong>(0.1 to 10) to define how far from the
+															subject property to search for comps.
+														</p>
+													</div>
+												</div>
+											</label>
+											<input type="text" class="form-control" />
+										</div>
+										<div class="col-sm-6">
+											<label class="form-label b-1 text-sm">Max Sale Days
+												<div class="popover-tooltip-wrapper d-inline-flex">
+													<span class="popover-tooltip" data-bs-html="true"
+														data-bs-placement="top" data-bs-html="true">
+														<em class="ic sm d-flex"><img src="./images/question-icon.svg"
+																alt="" /></em>
+													</span>
+													<div class="popover-content" style="display: none;">
+														<p class="text-gray06 text-xs">
+															Filter comps by how many<strong
+																class="fw-semibold text-gray05">days ago they last
+																sold</strong> (e.g., 30, 60, 90).
+														</p>
+													</div>
+												</div>
+											</label>
+											<input type="text" class="form-control" />
+										</div>
+										<div class="col-auto col-lg-4">
+											<div class="form-check">
+												<input type="checkbox" class="form-check-input" id="BedCheckbox"
+													checked>
+												<label class="form-check-label whitespace-normal" for="BedCheckbox">Arms
+													length
+													<div class="popover-tooltip-wrapper d-inline-flex">
+														<span class="popover-tooltip" data-bs-html="true"
+															data-bs-placement="top" data-bs-html="true">
+															<em class="ic sm d-flex"><img
+																	src="./images/question-icon.svg" alt="" /></em>
+														</span>
+														<div class="popover-content" style="display: none;">
+															<p class="text-gray06 text-xs">
+																If enabled, <strong
+																	class="fw-semibold text-gray05">include </strong>
+																only comps that were
+																<strong class="fw-semibold text-gray05">arm's
+																	length</strong> transactions.
+															</p>
+														</div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="col-auto col-lg-4">
+											<div class="form-check">
+												<input type="checkbox" class="form-check-input" id="BedCheckbox"
+													checked>
+												<label class="form-check-label whitespace-normal" for="BedCheckbox">Same
+													census track
+													<div class="popover-tooltip-wrapper d-inline-flex">
+														<span class="popover-tooltip" data-bs-html="true"
+															data-bs-placement="top" data-bs-html="true">
+															<em class="ic sm d-flex"><img
+																	src="./images/question-icon.svg" alt="" /></em>
+														</span>
+														<div class="popover-content" style="display: none;">
+															<p class="text-gray06 text-xs">
+																If enabled, <strong
+																	class="fw-semibold text-gray05">restrict</strong>
+																comps <strong class="fw-semibold text-gray05">to the
+																	same census tract</strong> as the subject property.
+															</p>
+														</div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="col-auto col-lg-4">
+											<div class="form-check">
+												<input type="checkbox" class="form-check-input" id="BedCheckbox"
+													checked>
+												<label class="form-check-label whitespace-normal" for="BedCheckbox">Same
+													county
+													<div class="popover-tooltip-wrapper d-inline-flex">
+														<span class="popover-tooltip" data-bs-html="true"
+															data-bs-placement="top" data-bs-html="true">
+															<em class="ic sm d-flex"><img
+																	src="./images/question-icon.svg" alt="" /></em>
+														</span>
+														<div class="popover-content" style="display: none;">
+															<p class="text-gray06 text-xs">
+																If enabled, <strong
+																	class="fw-semibold text-gray05">restrict</strong>
+																comps <strong class="fw-semibold text-gray05">to the
+																	same county </strong> as the subject property.
+															</p>
+														</div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="col-auto col-lg-4">
+											<div class="form-check">
+												<input type="checkbox" class="form-check-input" id="BedCheckbox"
+													checked>
+												<label class="form-check-label whitespace-normal" for="BedCheckbox">Same
+													neighborhood
+													<div class="popover-tooltip-wrapper d-inline-flex">
+														<span class="popover-tooltip" data-bs-html="true"
+															data-bs-placement="top" data-bs-html="true">
+															<em class="ic sm d-flex"><img
+																	src="./images/question-icon.svg" alt="" /></em>
+														</span>
+														<div class="popover-content" style="display: none;">
+															<p class="text-gray06 text-xs">
+																If enabled, <strong
+																	class="fw-semibold text-gray05">restrict</strong>
+																comps <strong class="fw-semibold text-gray05"> to the
+																	same census tract </strong> as the subject property.
+															</p>
+														</div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="col-auto col-lg-4">
+											<div class="form-check">
+												<input type="checkbox" class="form-check-input" id="BedCheckbox"
+													checked>
+												<label class="form-check-label whitespace-normal" for="BedCheckbox">Same
+													Zip
+													<div class="popover-tooltip-wrapper d-inline-flex">
+														<span class="popover-tooltip" data-bs-html="true"
+															data-bs-placement="top" data-bs-html="true">
+															<em class="ic sm d-flex"><img
+																	src="./images/question-icon.svg" alt="" /></em>
+														</span>
+														<div class="popover-content" style="display: none;">
+															<p class="text-gray06 text-xs">
+																If enabled, <strong
+																	class="fw-semibold text-gray05">restrict</strong>
+																comps <strong class="fw-semibold text-gray05"> to the
+																	same county </strong> as the subject property.
+															</p>
+														</div>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="filter-footer">
+									<button class="btn btn-outline-primary">Clear All</button>
+									<button class="btn btn-primary">Apply</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<button type="button" class="btn-close drawer-close"></button>
+				</div>
+			</div>
+			<div class="drawer-body inner-scroll">
+				<div class="comparables-map">
+					<img class="map-img" src="./images/comparables-imgs/map.png" alt="comparables map">
+					<button class="btn ic-btn pin-btn" data-bs-toggle="modal" data-bs-target="#comparables-image-modal">
+						<img class="" src="./images/ic-pin.svg" alt="comparables map">
+					</button>
+					<img class="edit-btn" src="./images/comparables-imgs/edit.png" alt="comparables map">
+					<img class="map-btn" src="./images/comparables-imgs/map-btn.png" alt="comparables map">
+					<img class="loc-btn" src="./images/comparables-imgs/loc.png" alt="comparables map">
+				</div>
+				<div class="comparables-body">
+					<div class="ag-grid-snap-block inner-scroll">
+						<img class="map-img" src="./images/comparables-imgs/table.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end comparables drawer -->
+
+
+		<!-- comparables image gallery Modal -->
+		<div class="modal fade comparables-image-modal" id="comparables-image-modal" tabindex="-1" aria-hidden="false"
+			aria-modal="true">
+			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content ">
+					<div class="modal-body">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<div class="swiper comparables-detail-swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"><img src="./images/image-thumb-main-5.png" alt="property">
+								</div>
+								<div class="swiper-slide"><img src="./images/image-thumb-main-5.png" alt="property">
+								</div>
+								<div class="swiper-slide"><img src="./images/image-thumb-main-5.png" alt="property">
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+						<ul class="list">
+							<li class="w-100">
+								<em class="i"><img src="./images/location-blue.svg" alt="" /></em>
+								<p>6502 Lakeland Blvd</p>
+							</li>
+							<li>
+								<em class="i"><img src="./images/bath-blue-ic.svg" alt="" /></em>
+								<p>2 Baths</p>
+							</li>
+							<li>
+								<em class="i"><img src="./images/bed-blue-ic.svg" alt="" /></em>
+								<p>3 Beds</p>
+							</li>
+							<li>
+								<em class="i"><img src="./images/ic-expend-blue.svg" alt="" /></em>
+								<p>1699 Sq ft</p>
+							</li>
+							<li>
+								<em class="i"><img src="./images/ic-move-blue.svg" alt="" /></em>
+								<p>10,00 Sq ft lot</p>
+							</li>
+							<li>
+								<em class="i"><img src="./images/ic-coins-blue.svg" alt="" /></em>
+								<p>9,963 Last Sold Price</p>
+							</li>
+							<li>
+								<em class="i"><img src="./images/ic-date-blue.svg" alt="" /></em>
+								<p>12/05/2024 Last Sold Date</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

@@ -14,5 +14,5 @@ document.write(
 	'<script type="text/javascript" src="js/custom.js"></script>' +	
 	'<script type="text/javascript" src="js/custom-tables.js"></script>' +
 	'<script type="text/javascript" src="js/property-details-drawer.js"></script>' +
-	'<script type="text/javascript" src="js/scout-info-drawer.js"></script>'
+	'<script type="text/javascript" src="js/comparables-drawer.js"></script>'
 );
